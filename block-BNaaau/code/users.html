@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user Form</title>
+    <style>
+        .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: rgb(247, 175, 175);
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+form {
+    border-radius: 1rem;
+    width: 700px;
+    margin: 4rem auto;
+    border: 2px solid;
+    background-color: cornflowerblue;
+}
+fieldset{
+    border: 0;
+    padding: 2rem;
+}
+input {
+    padding: 0.5rem 2rem;
+    margin: 0.4rem 1rem;
+    border-radius: 0.2rem;
+    border: 0;
+}
+form legend {
+    color: black;
+}
+
+form button {
+    background-color: rgb(14, 2, 2);
+    color: red;
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem 2rem;
+    font-weight: 800;
+    border: 0;
+    border-radius: 2rem;
+}
+    </style>
+</head>
+
+<body>
+    <h1>Basic User Form</h1>
+    <form>
+        <fieldset>
+            <div class="flex">
+
+                <label for="userName">Name :</label>
+                <input type="text" placeholder="Enter your Name" id="userName" name="userName">
+            </div>
+            <div class="flex">
+                <label for="userEmail">Email :</label>
+                <input type="email" placeholder="Enter your Email" id="userEmail">
+            </div>
+            <button>submit</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
